@@ -15,6 +15,7 @@ sheet = workbook.sheet_by_index(0)
 data = [[sheet.cell_value(r,c) for c in range(0,4)] for r in range(1,sheet.nrows)]
 
 
+
 data_aux = list(data)
 #Cria 3 centróides aleatórias
 import random 
@@ -97,8 +98,6 @@ def err(centroide_anterior,centroide):
     
     return maxdist
 
-    
-        
     return erro
 
 
@@ -166,9 +165,9 @@ while epsilon >= 0.1:
     print('epsilon',epsilon)
     
     
-irissetosa = cluster1
-irisversicolor = cluster2
-irisverginica = cluster3
+irissetosa = cluster3
+irisversicolor = cluster1
+irisverginica = cluster2
     
     
 print('Íris-setosa',irissetosa)
